@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>Welcome to Junha's SUPER DUPER Website!</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.js"></script>
+        
+        <link rel="shortcut icon" type="image/png" href="https://cdn.glitch.com/b2f79144-0257-4971-bc48-d3cb0405d952%2Fgalaxycircle.png?v=1572658553808"/>
+        
+        <style>
+            
+            #ctx {
+                width: 75%;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <canvas id="overlay" width="1100" height="500"></canvas>
+        
+        <header>
+            <marquee scrollamount="30px"><h1>The Greatest Website That the World has EVER KNOWN!!!!&nbsp;<span id="author">By Junha Lee</span></h1></marquee>
+        </header>
+        
+        <nav class="sticky">
+            <a href="/" class="nav-link"><i class="fa fa-home"></i>&nbsp;&nbsp;Home!!!</a>
+            <a href="/TheGreatest" class="nav-link"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;Why is this the greatest website?</a>
+            <a href="/Projects" class="nav-link"><i class="fa fa-code"></i>&nbsp;&nbsp;Projects!!</a>
+        </nav>
+        
+        <section>
+            
+            <div style="text-align:center">
+                <canvas id="ctx" width="600" height="400">Your browser doesn't support canvas :(</canvas>    
+            </div>
+            
+            <script type="text/javascript" src="/Projects/DariusGame/game.js"></script>
+            
+        </section>
+        
+        <footer>
+            HTML and CSS by the ONE and ONLY REAL JUNHA LEE!!!!!
+            <br>
+            
+            <div class="button-wrapper">
+                <button onclick="funButtonClicked()" class="rainbow-button" id="funButton">
+                    <span class="meme-font">FUN BUTTON!!!111</span>
+                </button>
+            </div>
+            
+            <br>
+            
+            <div class="funDashboard">
+                    
+                <div id="nice-padding">
+
+                    <h3><span class="meme-font">WELCOME TO THE FUN DASHBOARD (MAKE SURE TO HAVE FUN)</span></h3>
+
+                    <h4><span class="meme-font">SLIDER OF COLOR FUN (DONT GIVE YOURSELF A SEIZURE):</span></h4>
+                    <div class="slider-wrapper">
+                        <input type="range" min="1" max="100" id="funSlider" value="2" class="slider">
+                    </div>
+
+                    <h4><span class="meme-font">VERY NICE GIFS (VERY FUN):</span></h4>
+                    <div class="checkbox-wrapper">
+
+                    </div>
+                    
+                    <br>
+                    
+                    <button onclick="selectAll(true)" class="rainbow-button">
+                        <span class="meme-font">SELECT ALL</span>
+                    </button>
+
+                    <button onclick="selectAll(false)" class="rainbow-button">
+                        <span class="meme-font">DESELECT ALL</span>
+                    </button>
+
+                    <h4><span class="meme-font">SUPER NEAT MUSIC PLAYER (FUN SONGS ONLY):</span></h4>
+
+                    <div class="music-selector">
+                        <select id="musicSelector">
+                        </select>
+                        <!--<button onclick="submitMusic()" class="rainbow-button" id="submitButton">
+                            <span class="meme-font">SUBMIT</span>
+                        </button>-->
+
+                        <br>
+
+                        <div class="music-player">
+                            <button onclick="playSong()" class="rainbow-button">
+                                <span class="meme-font">PLAY&nbsp;<i class="fa fa-play white"></i></span>
+                            </button>
+                            <button onclick="pauseSong()" class="rainbow-button">
+                                <span class="meme-font">PAUSE&nbsp;<i class="fa fa-pause white"></i></span>
+                                <!--<i class="fa fa-pause white"></i>-->
+                            </button>
+                            <button onclick="stopSongs()" class="rainbow-button">
+                                <span class="meme-font">STOP&nbsp;<i class="fa fa-stop white"></i></span>
+                            </button>
+
+                            <br>
+                            <br>
+
+                            <span class="meme-font">VOLUME SLIDER: </span>
+                            <input type="range" min="0" max="100" id="volumeSlider" value="80">
+                            <span class="meme-font" id="currentVolume">80</span>
+
+                            <br>
+                            <br>
+                            
+                            <span class="meme-font" id="currently-playing">NOTHING IS PLAYING</span>
+                            <br>
+                            <span id="timer-wrapper"><span class="meme-font" id="timer">--:--</span></span>
+                            <input type="range" min="0" max="0" id="progressBar" value="0">
+                            
+                        </div>
+
+                    </div>
+                    
+                    <div class="other-options">
+                        
+                        <h4><span class="meme-font">VARIOUS OPTIONS:</span></h4>
+                        
+                        <div id="options-wrapper">
+                            
+                            <input type="checkbox" class="miscOption" id="bounce" onclick="bounceImages()"><span class="meme-font">TIME FOR BOUNCE</span>
+                            <br>
+                            <input type="checkbox" class="miscOption" id="spin" onclick="spinEverything()"><span class="meme-font">SPEEEN</span>
+                            <br>
+                            
+                        </div>
+                        
+                    </div>
+                  
+                </div>
+                
+            </div>
+            
+        </footer>
+        
+        <div class="cool-images"></div>
+        
+        <script src="/filedata.js"></script>
+        <script src="/scripts/musicplayer.js"></script>
+        <script src="/scripts/images.js"></script>
+        <script src="/scripts/rainbowcolors.js"></script>
+        <script src="/scripts/overlay.js"></script>
+        <script src="/funbutton.js"></script>
+        
+    </body>
+    
+</html>
