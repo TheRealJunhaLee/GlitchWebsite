@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Cabin&display=swap");
+
+* {
+    font-family: 'Cabin', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Archivo Black', sans-serif;
+    color: #EEEEEE;
+    text-shadow: 8px 8px 8px black;
+}
+
+h2 {
+    margin-top: 0px;
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
+    text-shadow: 3px 3px 3px #BBBBBB;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+h2:hover {
+    margin-top: 0px;
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
+    text-shadow: 3px 4px 6px #555555;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+header {
+    background-image: url("https://cdn.glitch.com/b2f79144-0257-4971-bc48-d3cb0405d952%2Fbrighter.png?v=1574030029656");
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position: center center;
+    margin: -8px -8px 0px -8px;
+    padding: 200px 0px 200px 0px;
+}
+
+nav {
+    background-color: #111111;
+    margin: 0px -8px -8px -8px;
+    padding: 25px;
+    text-align: center;
+    z-index: 1;
+}
+
+nav.sticky {
+    top: 0px;
+    position: sticky;
+    z-index: 1;
+}
+
+section {
+    background-color: #EEEEEE;
+    margin: -8px -8px -8px -8px;
+    padding: 50px 15% 50px 15%;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+    text-shadow: 0px 0px 0px rgba(10, 10, 10, .0);
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+p:hover {
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+    text-shadow: 0px 2px 3px rgba(10, 10, 10, .3);
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+li {
+    font-size: 20px;
+    line-height: 1.5;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+li:hover {
+    font-size: 20px;
+    line-height: 1.5;
+    text-shadow: 0px 2px 3px rgba(10, 10, 10, .3);
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+footer {
+    background-color: #111111;
+    margin: 0px -8px 0px -8px;
+    padding: 50px;
+    color: #EEEEEE;
+    font-size: 24px;
+}
+
+a {
+    color: black;
+    text-shadow: 2px 2px 5px gray;
+    text-decoration: none;
+    font-size: 24px;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #2488DC;
+    text-shadow: 2px 2px 5px blue;
+    text-decoration: none;
+    font-size: 24px;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+a.nav-link {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px gray;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 60px;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+a.nav-link:hover {
+    color: #FFFFFF;
+    text-shadow: 2px 4px 7px white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 60px;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+img {
+    margin: 0px;
+}
+
+.thirty-percent {
+    width: 30%;
+}
+
+.twenty-percent {
+    width: 20%;
+}
+
+.polaroid {
+    background-color: #FFFFFF;
+    /*margin: 0px 0px 60px 0px;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.polaroid:hover {
+    background-color: #FFFFFF;
+    /*margin: 0px 0px 60px 0px;*/
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.float-left {
+    margin: 0px 60px 60px 10px;
+    float: left;
+}
+
+.float-right {
+    margin: 0px 10px 60px 60px;
+    float: right;
+}
+
+.container {
+    text-align: center;
+    padding: 0px 20px 10px 20px;
+    line-height: 1;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.funDashboard {
+    display: none;
+}
+
+.button-wrapper {
+    text-align: center;
+}
+
+.meme-font {
+    font-family: Impact, Charcoal, sans-serif;
+    text-shadow:
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+    color: white;
+}
+
+.slider-wrapper {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    background-image: grey;
+    outline: none;
+    opacity: 0.7;
+    border-radius: 10px;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.funImage {
+    position: fixed;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.cool-images {
+    display: none;
+}
+
+.rainbow-button {
+    border: none;
+    padding: 10px;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    cursor: default;
+}
+
+.rainbow-button:hover {
+    cursor: pointer;
+}
+
+.music-selector {
+    margin-top: -20px;
+}
+
+.music-player {
+    margin-top: 20px;
+}
+
+.clearfix2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.gallery {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+div.gallery:hover {
+    background-color: #FFFFFF;
+    /*margin: 0px 0px 60px 0px;*/
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+#funButton {
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    cursor: default;
+}
+
+#funButton:hover {
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#author {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 40px;
+    color: #2488DC;
+    text-shadow: 8px 8px 8px black;
+}
+
+#nice-padding {
+    padding: 70px;
+}
+
+#timer {
+    display: inline-block;
+    width: 52px;
+}
+
+#overlay {
+    margin-left: -8px;
+    position: fixed;
+    z-index: 5;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
